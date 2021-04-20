@@ -12,6 +12,8 @@ pipeline{
                 script{
                     logger.logger("CHECK THIS ALERT","ALERT");    
                     logger.printPurpleMsg("printing purple message");
+                    logger.error("I am Error");
+                    logger.debug("I am Debug");
                 }
             }
         }
