@@ -26,5 +26,5 @@ def loadColors() {
 
 def printPurpleMsg(String msg) {
 	loadColors()
-	echo ${PURPLE}+$msg+${NC}
+	echo PURPLE+msg+NC
 }
