@@ -5,9 +5,5 @@ pipeline{
     options{
         ansiColor('xterm')
     }   
-    stages{
-        stage('first'){
-          logger.logger("CHECK THIS ALERT","ALERT");           
-        }
-    }
+    logger.logger("CHECK THIS ALERT","ALERT");           
 }
