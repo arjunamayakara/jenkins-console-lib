@@ -26,11 +26,5 @@ def loadColors() {
 
 def printPurpleMsg(String msg) {
 	loadColors()
-	
-	sh """
-	#!/bin/sh
-	set +x
 	echo -e "${PURPLE}$msg${NC}"
-	"""
-	
 }
