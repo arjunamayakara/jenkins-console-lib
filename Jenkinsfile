@@ -10,7 +10,8 @@ pipeline{
         stage('first'){
             steps{
                 script{
-                    logger.logger("CHECK THIS ALERT","ALERT");           
+                    logger.logger("CHECK THIS ALERT","ALERT");    
+                    logger.printPurpleMsg("printing purple message");
                 }
             }
         }
