@@ -2,12 +2,6 @@
 
 pipeline{
     agent any
-    options{
-        ansiColor('xterm')
-    }   
-    environment {
-        MAVEN_OPTS = '-Djansi.force=true'
-    }
      stages{
         stage('first'){
             steps{
