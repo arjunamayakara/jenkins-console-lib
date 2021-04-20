@@ -13,3 +13,24 @@ def logger(String str, String level)
         
    }
 }
+
+def loadColors() {
+	RED='\033[0;31m'
+	BLUE='\033[0;34m'
+	CYAN='\033[0;36m'
+	GREEN='\033[0;32m'
+	PURPLE='\033[0;35m'
+	ON_YELLOW='\033[0;43m'
+	NC='\033[0;0m'
+}
+
+def printPurpleMsg(String msg) {
+	loadColors()
+	
+	sh """
+	#!/bin/sh
+	set +x
+	echo -e "${PURPLE}$msg${NC}"
+	"""
+	
+}
