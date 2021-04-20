@@ -24,7 +24,56 @@ def loadColors() {
 	NC='\033[0;0m'
 }
 
+def printMsg(String message, String level, String color) {
+	loadColors()
+	echo color + level +' - '+message + NC
+}
+
+def debug(String message) {
+	loadColors()
+
+	printMsg(message, "DEBUG", BLUE)
+}
+
+def info(String message) {
+	loadColors()
+
+	printMsg(message, "INFO", "$CYAN")
+}
+
+def warn(String message) {
+	loadColors()
+
+	printMsg(message, "WARN", "$ON_YELLOW")
+}
+
+def error(String message) {
+	loadColors()
+
+	printMsg(message, "ERROR", "$RED")
+}
+
+def printRedMsg(String msg) {
+	loadColors()
+	echo RED + msg + NC
+}
+
+def printGreenMsg(String msg) {
+	loadColors()
+	echo GREEN + msg + NC
+}
+
+def printBlueMsg(String msg) {
+	loadColors()
+	echo BLUE + msg + NC
+}
+
+def printCyanMsg(String msg) {
+	loadColors()
+	echo CYAN + msg + NC
+}
+
 def printPurpleMsg(String msg) {
 	loadColors()
-	echo PURPLE+msg+NC
+	echo PURPLE + msg + NC
 }
