@@ -1,6 +1,6 @@
 @Library('jenkins-console-lib@master') _
 
-node{
+pipeline{
     options{
         ansiColor('xterm')
     }   
